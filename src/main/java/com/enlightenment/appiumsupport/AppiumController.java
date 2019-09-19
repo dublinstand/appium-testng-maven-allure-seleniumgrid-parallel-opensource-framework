@@ -61,6 +61,7 @@ public class AppiumController {
                 capabilities.setCapability("appPackage", "com.wdiodemoapp");
                 capabilities.setCapability("appActivity", "com.wdiodemoapp.MainActivity");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+//                capabilities.setCapability("isHeadless", true);
 //                capabilities.setCapability("autoDismissAlerts", true);
 //                capabilities.setCapability("fullReset", true);
 //                capabilities.setCapability("noReset", false);
@@ -81,6 +82,7 @@ public class AppiumController {
                 capabilities.setCapability(MobileCapabilityType.APP, absoluteIOSAppPath);
                 capabilities.setCapability("bundleId", "org.reactjs.native.example.wdioDemoApp");
                 capabilities.setCapability("udid", "7E2C031E-5CFC-4D24-93D9-23E754C78049");
+//                capabilities.setCapability("isHeadless", true);
 
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
                 capabilities.setCapability("useNewWDA", true);
