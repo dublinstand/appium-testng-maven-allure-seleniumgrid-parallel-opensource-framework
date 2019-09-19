@@ -61,9 +61,9 @@ public class AppiumController {
                 capabilities.setCapability("appPackage", "com.wdiodemoapp");
                 capabilities.setCapability("appActivity", "com.wdiodemoapp.MainActivity");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-                capabilities.setCapability("autoDismissAlerts", true);
-                capabilities.setCapability("fullReset", true);
-                capabilities.setCapability("noReset", false);
+//                capabilities.setCapability("autoDismissAlerts", true);
+//                capabilities.setCapability("fullReset", true);
+//                capabilities.setCapability("noReset", false);
 
                 driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 //                driver = new AndroidDriver(new URL("http://127.0.0.1:4444/wd/hub"), capabilities);
@@ -128,8 +128,8 @@ public class AppiumController {
                 capabilities.setCapability("appActivity", "com.wdiodemoapp.MainActivity");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability("autoDismissAlerts", true);
-                capabilities.setCapability("fullReset", true);
-                capabilities.setCapability("noReset", false);
+//                capabilities.setCapability("fullReset", true);
+//                capabilities.setCapability("noReset", false);
 
                 driver = new AndroidDriver(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), capabilities);
                 break;
